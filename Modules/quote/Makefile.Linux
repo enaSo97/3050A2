@@ -1,0 +1,11 @@
+CC      = gcc
+CFLAGS  = -g -fPIC
+LIB     = quoteLinux.so
+OBJS    = quote.o
+
+$(LIB): $(OBJS)
+	$(CC) -shared -Wl,-soname,$(LIB) -o $(LIB) $(OBJS)
+
+clean:
+	- rm -f $(LIB)
+	- rm -f $(OBJS)

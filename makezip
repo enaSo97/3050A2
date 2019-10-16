@@ -1,0 +1,10 @@
+#!/bin/sh
+
+(
+	cd ..
+	zip -R CIS3050-A2-code.zip \
+            CIS3050-A2-code/mk* \
+            CIS3050-A2-code/*akefile* \
+            CIS3050-A2-code/*.[ch]
+)
+

@@ -1,0 +1,3 @@
+/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir
+/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles/edit_cache.dir

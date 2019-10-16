@@ -1,0 +1,31 @@
+CFLAGS  = -g
+LDLIBS  = -ldl
+CAPSLIB     = capsLinux.so
+DEFAULTLIB  = defaultLinux.so
+QUOTELIB    = quoteLinux.so
+
+EXE     = capsloadLinux
+OBJS = \
+	formatter_main.o \
+	formatter_process.o \
+	strconcat.o \
+	strsplit.o
+
+$(EXE): $(OBJS) Modules/caps/$(CAPSLIB) Modules/default/$(DEFAULTLIB) Modules/quote/$(QUOTELIB)
+	$(CC) $(CFLAGS) -Llib -rdynamic -o $(EXE) $(OBJS) $(LDLIBS)
+
+Modules/caps/$(CAPSLIB):
+	cd Modules/caps ; make -f Makefile.Linux $(CAPSLIB)
+
+Modules/default/$(DEFAULTLIB):
+	cd Modules/default ; make -f Makefile.Linux $(DEFAULTLIB)
+
+Modules/quote/$(QUOTELIB):
+	cd Modules/quote ; make -f Makefile.Linux $(QUOTELIB)
+
+clean:
+	- rm -f $(EXE)
+	- rm -f $(OBJS)
+	( cd Modules/caps ; make -f Makefile.Linux clean )
+	( cd Modules/default ; make -f Makefile.Linux clean )
+	( cd Modules/quote ; make -f Makefile.Linux clean )
