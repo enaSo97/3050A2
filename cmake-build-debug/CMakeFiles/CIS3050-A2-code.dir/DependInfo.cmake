@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/CRLF/crlf.c" "/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.o"
+  "/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/bare/bare.c" "/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.o"
   "/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/caps/caps.c" "/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/Modules/caps/caps.c.o"
   "/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/default/default.c" "/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/Modules/default/default.c.o"
+  "/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/native/native.c" "/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.o"
   "/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/quote/quote.c" "/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/Modules/quote/quote.c.o"
   "/home/skullscript/CLionProjects/CIS3050-A2-code/formatter_main.c" "/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/formatter_main.c.o"
   "/home/skullscript/CLionProjects/CIS3050-A2-code/formatter_process.c" "/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/formatter_process.c.o"

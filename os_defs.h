@@ -52,6 +52,20 @@
 
 
 /* #elif defined( ...  -- do something here to work out the rest */
+#elif defined(__APPLE__)
+#define OS_DARWIN
+
+#elif defined(__linux__)
+#define OS_LINUX
+
+#elif defined(_WIN32)
+#include <windows.h>
+#include <stdio.h>
+#include <tchar.h>
+#define OS_WINDOWS
+#define DIV 1048576
+#define WIDTH 7
+
 
 #else
 #   warning Unknown operating system -- need more defines in os_defs.h!

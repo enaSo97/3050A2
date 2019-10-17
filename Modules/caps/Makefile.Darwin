@@ -1,0 +1,11 @@
+CC      = gcc
+CFLAGS  = -g -fPIC
+LIB     = capsLinux.so
+OBJS    = caps.o
+
+$(LIB): $(OBJS)
+	$(CC) -dynamiclib -Wl,-dylib,$(LIB) -o $(LIB) $(OBJS)
+
+clean:
+	- rm -f $(LIB)
+	- rm -f $(OBJS)

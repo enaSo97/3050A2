@@ -148,6 +148,45 @@ CMakeFiles/CIS3050-A2-code.dir/Modules/quote/quote.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CIS3050-A2-code.dir/Modules/quote/quote.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/skullscript/CLionProjects/CIS3050-A2-code/Modules/quote/quote.c -o CMakeFiles/CIS3050-A2-code.dir/Modules/quote/quote.c.s
 
+CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.o: CMakeFiles/CIS3050-A2-code.dir/flags.make
+CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.o: ../Modules/CRLF/crlf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.o   -c /home/skullscript/CLionProjects/CIS3050-A2-code/Modules/CRLF/crlf.c
+
+CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/skullscript/CLionProjects/CIS3050-A2-code/Modules/CRLF/crlf.c > CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.i
+
+CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/skullscript/CLionProjects/CIS3050-A2-code/Modules/CRLF/crlf.c -o CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.s
+
+CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.o: CMakeFiles/CIS3050-A2-code.dir/flags.make
+CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.o: ../Modules/bare/bare.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.o   -c /home/skullscript/CLionProjects/CIS3050-A2-code/Modules/bare/bare.c
+
+CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/skullscript/CLionProjects/CIS3050-A2-code/Modules/bare/bare.c > CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.i
+
+CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/skullscript/CLionProjects/CIS3050-A2-code/Modules/bare/bare.c -o CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.s
+
+CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.o: CMakeFiles/CIS3050-A2-code.dir/flags.make
+CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.o: ../Modules/native/native.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.o   -c /home/skullscript/CLionProjects/CIS3050-A2-code/Modules/native/native.c
+
+CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/skullscript/CLionProjects/CIS3050-A2-code/Modules/native/native.c > CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.i
+
+CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/skullscript/CLionProjects/CIS3050-A2-code/Modules/native/native.c -o CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.s
+
 # Object files for target CIS3050-A2-code
 CIS3050__A2__code_OBJECTS = \
 "CMakeFiles/CIS3050-A2-code.dir/formatter_main.c.o" \
@@ -156,7 +195,10 @@ CIS3050__A2__code_OBJECTS = \
 "CMakeFiles/CIS3050-A2-code.dir/strsplit.c.o" \
 "CMakeFiles/CIS3050-A2-code.dir/Modules/default/default.c.o" \
 "CMakeFiles/CIS3050-A2-code.dir/Modules/caps/caps.c.o" \
-"CMakeFiles/CIS3050-A2-code.dir/Modules/quote/quote.c.o"
+"CMakeFiles/CIS3050-A2-code.dir/Modules/quote/quote.c.o" \
+"CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.o" \
+"CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.o" \
+"CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.o"
 
 # External object files for target CIS3050-A2-code
 CIS3050__A2__code_EXTERNAL_OBJECTS =
@@ -168,9 +210,12 @@ CIS3050-A2-code: CMakeFiles/CIS3050-A2-code.dir/strsplit.c.o
 CIS3050-A2-code: CMakeFiles/CIS3050-A2-code.dir/Modules/default/default.c.o
 CIS3050-A2-code: CMakeFiles/CIS3050-A2-code.dir/Modules/caps/caps.c.o
 CIS3050-A2-code: CMakeFiles/CIS3050-A2-code.dir/Modules/quote/quote.c.o
+CIS3050-A2-code: CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.o
+CIS3050-A2-code: CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.o
+CIS3050-A2-code: CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.o
 CIS3050-A2-code: CMakeFiles/CIS3050-A2-code.dir/build.make
 CIS3050-A2-code: CMakeFiles/CIS3050-A2-code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable CIS3050-A2-code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/skullscript/CLionProjects/CIS3050-A2-code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable CIS3050-A2-code"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CIS3050-A2-code.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

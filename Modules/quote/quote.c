@@ -6,15 +6,16 @@
 #include<stdlib.h>
 #include<string.h>
 
-void quote(char * line)
+void module(char * line)
 {
 	char buff[128];
 	memset(buff, 0, 128);
 	for (int i = 0; i < strlen(line); i++)
 	{
-		if (i == 0)
+		if (i == 0 && line[i] != ':')
 		{
 			strcat(buff, "\"");
+			buff[strlen(buff)] = line[i];
 		}
 		else if (line[i] == '\"')
 		{
@@ -29,5 +30,6 @@ void quote(char * line)
 			buff[strlen(buff)] = line[i];
 		}
 	}
+	strcat(buff, "\n");
 	strcpy(line, buff);
 }

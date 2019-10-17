@@ -123,6 +123,60 @@ CIS3050-A2-code/fast:
 	$(MAKE) -f CMakeFiles/CIS3050-A2-code.dir/build.make CMakeFiles/CIS3050-A2-code.dir/build
 .PHONY : CIS3050-A2-code/fast
 
+Modules/CRLF/crlf.o: Modules/CRLF/crlf.c.o
+
+.PHONY : Modules/CRLF/crlf.o
+
+# target to build an object file
+Modules/CRLF/crlf.c.o:
+	$(MAKE) -f CMakeFiles/CIS3050-A2-code.dir/build.make CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.o
+.PHONY : Modules/CRLF/crlf.c.o
+
+Modules/CRLF/crlf.i: Modules/CRLF/crlf.c.i
+
+.PHONY : Modules/CRLF/crlf.i
+
+# target to preprocess a source file
+Modules/CRLF/crlf.c.i:
+	$(MAKE) -f CMakeFiles/CIS3050-A2-code.dir/build.make CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.i
+.PHONY : Modules/CRLF/crlf.c.i
+
+Modules/CRLF/crlf.s: Modules/CRLF/crlf.c.s
+
+.PHONY : Modules/CRLF/crlf.s
+
+# target to generate assembly for a file
+Modules/CRLF/crlf.c.s:
+	$(MAKE) -f CMakeFiles/CIS3050-A2-code.dir/build.make CMakeFiles/CIS3050-A2-code.dir/Modules/CRLF/crlf.c.s
+.PHONY : Modules/CRLF/crlf.c.s
+
+Modules/bare/bare.o: Modules/bare/bare.c.o
+
+.PHONY : Modules/bare/bare.o
+
+# target to build an object file
+Modules/bare/bare.c.o:
+	$(MAKE) -f CMakeFiles/CIS3050-A2-code.dir/build.make CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.o
+.PHONY : Modules/bare/bare.c.o
+
+Modules/bare/bare.i: Modules/bare/bare.c.i
+
+.PHONY : Modules/bare/bare.i
+
+# target to preprocess a source file
+Modules/bare/bare.c.i:
+	$(MAKE) -f CMakeFiles/CIS3050-A2-code.dir/build.make CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.i
+.PHONY : Modules/bare/bare.c.i
+
+Modules/bare/bare.s: Modules/bare/bare.c.s
+
+.PHONY : Modules/bare/bare.s
+
+# target to generate assembly for a file
+Modules/bare/bare.c.s:
+	$(MAKE) -f CMakeFiles/CIS3050-A2-code.dir/build.make CMakeFiles/CIS3050-A2-code.dir/Modules/bare/bare.c.s
+.PHONY : Modules/bare/bare.c.s
+
 Modules/caps/caps.o: Modules/caps/caps.c.o
 
 .PHONY : Modules/caps/caps.o
@@ -176,6 +230,33 @@ Modules/default/default.s: Modules/default/default.c.s
 Modules/default/default.c.s:
 	$(MAKE) -f CMakeFiles/CIS3050-A2-code.dir/build.make CMakeFiles/CIS3050-A2-code.dir/Modules/default/default.c.s
 .PHONY : Modules/default/default.c.s
+
+Modules/native/native.o: Modules/native/native.c.o
+
+.PHONY : Modules/native/native.o
+
+# target to build an object file
+Modules/native/native.c.o:
+	$(MAKE) -f CMakeFiles/CIS3050-A2-code.dir/build.make CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.o
+.PHONY : Modules/native/native.c.o
+
+Modules/native/native.i: Modules/native/native.c.i
+
+.PHONY : Modules/native/native.i
+
+# target to preprocess a source file
+Modules/native/native.c.i:
+	$(MAKE) -f CMakeFiles/CIS3050-A2-code.dir/build.make CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.i
+.PHONY : Modules/native/native.c.i
+
+Modules/native/native.s: Modules/native/native.c.s
+
+.PHONY : Modules/native/native.s
+
+# target to generate assembly for a file
+Modules/native/native.c.s:
+	$(MAKE) -f CMakeFiles/CIS3050-A2-code.dir/build.make CMakeFiles/CIS3050-A2-code.dir/Modules/native/native.c.s
+.PHONY : Modules/native/native.c.s
 
 Modules/quote/quote.o: Modules/quote/quote.c.o
 
@@ -321,12 +402,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CIS3050-A2-code"
 	@echo "... edit_cache"
+	@echo "... Modules/CRLF/crlf.o"
+	@echo "... Modules/CRLF/crlf.i"
+	@echo "... Modules/CRLF/crlf.s"
+	@echo "... Modules/bare/bare.o"
+	@echo "... Modules/bare/bare.i"
+	@echo "... Modules/bare/bare.s"
 	@echo "... Modules/caps/caps.o"
 	@echo "... Modules/caps/caps.i"
 	@echo "... Modules/caps/caps.s"
 	@echo "... Modules/default/default.o"
 	@echo "... Modules/default/default.i"
 	@echo "... Modules/default/default.s"
+	@echo "... Modules/native/native.o"
+	@echo "... Modules/native/native.i"
+	@echo "... Modules/native/native.s"
 	@echo "... Modules/quote/quote.o"
 	@echo "... Modules/quote/quote.i"
 	@echo "... Modules/quote/quote.s"

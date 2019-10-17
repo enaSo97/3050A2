@@ -7,7 +7,7 @@ CRLFLIB     = crlfLinux.so
 BARELIB     = bareLinux.so
 NATIVELIB      = nativeLinux.so
 
-EXE     = capsloadLinux
+EXE     = loadDarwin
 OBJS = \
 	formatter_main.o \
 	formatter_process.o \
@@ -18,29 +18,29 @@ $(EXE): $(OBJS) Modules/caps/$(CAPSLIB) Modules/default/$(DEFAULTLIB) Modules/qu
 	$(CC) $(CFLAGS) -Llib -rdynamic -o $(EXE) $(OBJS) $(LDLIBS)
 
 Modules/caps/$(CAPSLIB):
-	cd Modules/caps ; make -f Makefile.Linux $(CAPSLIB)
+	cd Modules/caps ; make -f Makefile.Darwin $(CAPSLIB)
 
 Modules/default/$(DEFAULTLIB):
-	cd Modules/default ; make -f Makefile.Linux $(DEFAULTLIB)
+	cd Modules/default ; make -f Makefile.Darwin $(DEFAULTLIB)
 
 Modules/quote/$(QUOTELIB):
-	cd Modules/quote ; make -f Makefile.Linux $(QUOTELIB)
+	cd Modules/quote ; make -f Makefile.Darwin $(QUOTELIB)
 
 Modules/CRLF/$(CRLFLIB):
-	cd Modules/CRLF ; make -f Makefile.Linux $(CRLFLIB)
+	cd Modules/CRLF ; make -f Makefile.Darwin $(CRLFLIB)
 
 Modules/bare/$(BARELIB):
 	cd Modules/bare ; make -f Makefile.Linux $(BARELIB)
 
 Modules/native/$(NATIVELIB):
-	cd Modules/native ; make -f Makefile.Linux $(NATIVELIB)
+	cd Modules/native ; make -f Makefile.Darwin $(NATIVELIB)
 
 clean:
 	- rm -f $(EXE)
 	- rm -f $(OBJS)
-	( cd Modules/caps ; make -f Makefile.Linux clean )
-	( cd Modules/default ; make -f Makefile.Linux clean )
-	( cd Modules/quote ; make -f Makefile.Linux clean )
-	( cd Modules/CRLF ; make -f Makefile.Linux clean )
-	( cd Modules/bare ; make -f Makefile.Linux clean )
-	( cd Modules/native ; make -f Makefile.Linux clean )
+	( cd Modules/caps ; make -f Makefile.Darwin clean )
+	( cd Modules/default ; make -f Makefile.Darwin clean )
+	( cd Modules/quote ; make -f Makefile.Darwin clean )
+	( cd Modules/CRLF ; make -f Makefile.Darwin clean )
+	( cd Modules/bare ; make -f Makefile.Darwin clean )
+	( cd Modules/native ; make -f Makefile.Darwin clean )

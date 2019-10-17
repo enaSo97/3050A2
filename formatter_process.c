@@ -95,7 +95,7 @@ searchAndLoadModule(const char *moduleName, const char *modulePath, int verbosit
 void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNode *result){
 	void * dlib;
 	void * dlfunction;
-	printf("dir: %s\n", modulePath);
+	//printf("dir: %s\n", modulePath);
 	DIR * d;
 	d = opendir(modulePath);
 	struct dirent * entry;
@@ -148,6 +148,26 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 					result->sharedObject = dlopen(path, RTLD_NOW);
 					result->next = NULL;
 					printf("DEBUG: quote module loaded\n");
+					//dlfunction = dlsym(dlib, "default_prepend");
+				}
+			}
+			else if (strcmp(moduleName, "crlf") == 0)
+			{
+				if (strcmp(entry->d_name, "crlfLinux.so") == 0)
+				{
+					result->sharedObject = dlopen(path, RTLD_NOW);
+					result->next = NULL;
+					printf("DEBUG: crlf module loaded\n");
+					//dlfunction = dlsym(dlib, "default_prepend");
+				}
+			}
+			else if (strcmp(moduleName, "native") == 0)
+			{
+				if (strcmp(entry->d_name, "nativeLinux.so") == 0)
+				{
+					result->sharedObject = dlopen(path, RTLD_NOW);
+					result->next = NULL;
+					printf("DEBUG: native module loaded\n");
 					//dlfunction = dlsym(dlib, "default_prepend");
 				}
 			}
@@ -275,8 +295,8 @@ processLineData(
 
 	/** make sure that we actually loaded the module, or abort */
 	assert(moduleData->sharedObject != NULL);
-	//printf("Module name: %s\n", moduleData->name);
-	if (strcmp(moduleData->name, "default")==0)
+
+	/*if (strcmp(moduleData->name, "default")==0)
 	{
 		void * dlfunction = dlsym(moduleData->sharedObject, "default_prepend");
 		if (dlfunction == NULL){
@@ -284,7 +304,6 @@ processLineData(
 		}
 		void (*fptr)(char *, int);
 		fptr = (void(*)(char*, int))dlfunction;
-		//*lineData->bufferset = realloc(*lineData->bufferset, sizeof(char)*strlen(*lineData->bufferset) + 4);
 		(*fptr)((char *)*lineData->bufferset, lineNo);
 	}
 	else if (strcmp(moduleData->name, "caps")==0)
@@ -306,6 +325,31 @@ processLineData(
 		fptr = (void(*)(char*))dlfunction;
 		(*fptr)((char *) *lineData->bufferset);
 	}
+	else if (strcmp(moduleData->name, "crlf")==0)
+	{
+		void * dlfunction = dlsym(moduleData->sharedObject, "function");
+		if (dlfunction == NULL){
+			fprintf(stderr, "Cannont locate function symbol '%s' : %s\n", "crlfLinux.so", dlerror());
+		}
+		void (*fptr)(char *);
+		fptr = (void(*)(char*))dlfunction;
+		(*fptr)((char *) *lineData->bufferset);
+	}*/
+	void * dlfunction = dlsym(moduleData->sharedObject, "module");
+	if (dlfunction == NULL){
+		fprintf(stderr, "Cannont locate function symbol '%s' : %s\n", "defaultLinux.so", dlerror());
+	}
+	if (strcmp(moduleData->name, "default")==0)
+	{
+		void (*fptr)(char *, int);
+		fptr = (void(*)(char*, int))dlfunction;
+		(*fptr)((char *)*lineData->bufferset, lineNo);
+	}else{
+		void (*fptr)(char *);
+		fptr = (void(*)(char*))dlfunction;
+		(*fptr)((char *) *lineData->bufferset);
+	}
+
 
 	dbgPrint(verbosity, 2, "Locating function in module '%s'\n", moduleData->name);
 	/** get the symbol from the module listed in "moduleData */
@@ -404,7 +448,7 @@ processFP(
 	moduleProcessingData.requiresFree[0] = 0;
 
 	while (fgets(line, BUFSIZ, ifp) != NULL) {
-		printf("DEBUG: stdin %s\n", line);
+		//printf("DEBUG: stdin %s\n", line);
 		moduleProcessingData.nBuffers = 1;
 		if ( processLineWithModuleList(
 				moduleChain,

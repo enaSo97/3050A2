@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/CRLF/crlf.c">
+			<Option target="CIS3050-A2-code"/>
+		</Unit>
+		<Unit filename="/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/bare/bare.c">
+			<Option target="CIS3050-A2-code"/>
+		</Unit>
 		<Unit filename="/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/caps/caps.c">
 			<Option target="CIS3050-A2-code"/>
 		</Unit>
@@ -89,6 +95,9 @@
 			<Option target="CIS3050-A2-code"/>
 		</Unit>
 		<Unit filename="/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/default/default.c">
+			<Option target="CIS3050-A2-code"/>
+		</Unit>
+		<Unit filename="/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/native/native.c">
 			<Option target="CIS3050-A2-code"/>
 		</Unit>
 		<Unit filename="/home/skullscript/CLionProjects/CIS3050-A2-code/Modules/quote/quote.c">
