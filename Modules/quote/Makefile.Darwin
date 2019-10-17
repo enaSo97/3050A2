@@ -1,6 +1,6 @@
-CC      = gcc
+#CC      = gcc
 CFLAGS  = -g -fPIC
-LIB     = quoteLinux.so
+LIB     = quoteDarwin.so
 OBJS    = quote.o
 
 $(LIB): $(OBJS)
@@ -9,3 +9,4 @@ $(LIB): $(OBJS)
 clean:
 	- rm -f $(LIB)
 	- rm -f $(OBJS)
+CFLAGS

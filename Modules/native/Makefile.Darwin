@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  = -g -fPIC
-LIB     = nativeLinux.so
+LIB     = nativeDarwin.so
 OBJS    = native.o
 
 $(LIB): $(OBJS)

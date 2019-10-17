@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  = -g -fPIC
-LIB     = bareLinux.so
+LIB     = bareDarwin.so
 OBJS    = bare.o
 
 $(LIB): $(OBJS)
