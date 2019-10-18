@@ -171,6 +171,16 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 					//dlfunction = dlsym(dlib, "default_prepend");
 				}
 			}
+			else if (strcmp(moduleName, "bare") == 0)
+			{
+				if (strcmp(entry->d_name, "bare.so") == 0)
+				{
+					result->sharedObject = dlopen(path, RTLD_NOW);
+					result->next = NULL;
+					printf("DEBUG: bare module loaded\n");
+					//dlfunction = dlsym(dlib, "default_prepend");
+				}
+			}
 		}
 
 	}

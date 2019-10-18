@@ -59,7 +59,7 @@ static char *calculateOptionArgAndAdjustIndex(
 }
 
 int
-main(int argc, char **argv)
+main(int argc, char ** argv)
 {
 	FILE *ofp = stdout;
 	char *modulePath = NULL, *moduleLoadString = NULL;
