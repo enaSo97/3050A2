@@ -1,5 +1,5 @@
 CFLAGS  = -g
-LDLIBS  = -ldl
+LDLIBS  =
 CAPSLIB     = capsDarwin.so
 DEFAULTLIB  = defaultDarwin.so
 QUOTELIB    = quoteDarwin.so
