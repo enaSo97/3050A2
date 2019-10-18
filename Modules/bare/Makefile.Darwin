@@ -4,7 +4,7 @@ LIB     = bareDarwin.so
 OBJS    = bare.o
 
 $(LIB): $(OBJS)
-	$(CC) -dynamiclib -Wl,-dylib,-o $(LIB) $(OBJS)
+	$(CC) -dynamiclib -Wl,-dylib,-o,$(LIB) $(OBJS)
 
 clean:
 	- rm -f $(LIB)
