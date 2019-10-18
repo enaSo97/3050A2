@@ -30,7 +30,7 @@ Modules/CRLF/$(CRLFLIB):
 	cd Modules/CRLF ; make -f Makefile.Darwin $(CRLFLIB)
 
 Modules/bare/$(BARELIB):
-	cd Modules/bare ; make -f Makefile.Linux $(BARELIB)
+	cd Modules/bare ; make -f Makefile.Darwin $(BARELIB)
 
 Modules/native/$(NATIVELIB):
 	cd Modules/native ; make -f Makefile.Darwin $(NATIVELIB)

@@ -4,7 +4,7 @@ LIB     = capsDarwin.so
 OBJS    = caps.o
 
 $(LIB): $(OBJS)
-	$(CC) -dynamiclib -Wl,-dylib,$(LIB) -o $(LIB) $(OBJS)
+	$(CC) -dynamiclib -Wl,-dylib,-o $(LIB) $(OBJS)
 
 clean:
 	- rm -f $(LIB)

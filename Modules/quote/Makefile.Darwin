@@ -4,7 +4,7 @@ LIB     = quoteDarwin.so
 OBJS    = quote.o
 
 $(LIB): $(OBJS)
-	$(CC) -dynamiclib -Wl,-dylib,$(LIB) -o $(LIB) $(OBJS)
+	$(CC) -dynamiclib -Wl,-dylib,-o $(LIB) $(OBJS)
 
 clean:
 	- rm -f $(LIB)

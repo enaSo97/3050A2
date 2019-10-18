@@ -1,10 +1,10 @@
-CC      = gcc
+#CC      = gcc
 CFLAGS  = -g -fPIC
 LIB     = nativeDarwin.so
 OBJS    = native.o
 
 $(LIB): $(OBJS)
-	$(CC) -dynamiclib -Wl,-dylib,$(LIB) -o $(LIB) $(OBJS)
+	$(CC) -dynamiclib -Wl,-dylib,-o $(LIB) $(OBJS)
 
 clean:
 	- rm -f $(LIB)
