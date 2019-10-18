@@ -49,11 +49,12 @@ $(EXE) exe : $(OBJS) libs
 	icacls $(EXE) /grant Everyone:RX
 
 libs:
-    for file in Modules/* ; do \
-        if [ -d "$$file" ] ; then \
-            ( cd "$$file" ; `cd`/mk ) ; \
+	set SCRIPTDIR = `cd`; \
+    FOR %%dir in Modules/* \
+    DO
+        if [ -d "%%dir" ] ; then \
+            ( cd "%%dir" ; %SCRIPTDIR%/mk ) ; \
         fi ;\
-    done
 
 ##
 ##	Cleanup Targets
