@@ -1,4 +1,4 @@
-CC      = gcc
+#CC      = gcc
 CFLAGS  = -g -fPIC
 LIB     = capsDarwin.so
 OBJS    = caps.o
