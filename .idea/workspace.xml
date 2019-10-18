@@ -11,9 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b8e43e1-9ef8-402d-810a-d65608f7ec7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Makefile.Windows" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile.Windows" afterDir="false" />
-    </list>
+    <list default="true" id="4b8e43e1-9ef8-402d-810a-d65608f7ec7f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571155297064</updated>
-      <workItem from="1571155298531" duration="78168000" />
+      <workItem from="1571155298531" duration="78447000" />
     </task>
     <servers />
   </component>

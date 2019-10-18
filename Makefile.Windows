@@ -50,10 +50,10 @@ $(EXE) exe : $(OBJS) libs
 
 libs:
 	set SCRIPTDIR = `cd`; \
-    FOR /D %%dir in Modules/* \
+    FOR /D %dir in Modules/* \
     DO
-            echo %%dir
-            cd %dir% ; %SCRIPTDIR%/mk
+            echo %dir
+            cd %dir ; %SCRIPTDIR%/mk
 
 ##
 ##	Cleanup Targets
