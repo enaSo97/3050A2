@@ -44,16 +44,12 @@ LDLIBS =
 ##
 
 # Default target - build the program
-$(EXE) exe : $(OBJS) libs
+$(EXE) exe : $(OBJS) Modules/bare/bare.dll
 	$(CC) $(CFLAGS) $(OBJS) /link /out:$(EXE) $(LDFLAGS) $(LDLIBS)
 	icacls $(EXE) /grant Everyone:RX
 
-DIR = Modules
-libs:
-	$(MYDIR)/*
-    for /D file in $^; do \
-            echo %%dir
-            cd %%dir ; %SCRIPTDIR%/mk
+Modules/bare/bare.dll:
+	cd Modules\bare ; mk -f Makefile.Windows bare.dll
 
 ##
 ##	Cleanup Targets
