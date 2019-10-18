@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  = -g -fPIC
-LIB     = bare.so
+LIB     = libBareLF.so
 OBJS    = bare.o
 
 $(LIB): $(OBJS)

@@ -1,6 +1,6 @@
 #CC      = gcc
 CFLAGS  = -g -fPIC
-LIB     = default.so
+LIB     = libDefault.so
 OBJS    = default.o
 
 $(LIB): $(OBJS)

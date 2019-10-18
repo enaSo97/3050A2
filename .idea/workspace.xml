@@ -12,25 +12,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b8e43e1-9ef8-402d-810a-d65608f7ec7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/expected/test4.expected" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DESGIN_DOC.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile.Darwin" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile.Darwin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile.Linux" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile.Linux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/CRLF/Makefile.Darwin" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/CRLF/Makefile.Darwin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/CRLF/Makefile.Linux" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/CRLF/Makefile.Linux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/bare/Makefile.Darwin" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/bare/Makefile.Darwin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/bare/Makefile.Linux" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/bare/Makefile.Linux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/caps/Makefile.Darwin" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/caps/Makefile.Darwin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/caps/Makefile.Linux" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/caps/Makefile.Linux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/default/Makefile.Darwin" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/default/Makefile.Darwin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/default/Makefile.Linux" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/default/Makefile.Linux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/native/Makefile.Darwin" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/native/Makefile.Darwin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/native/Makefile.Linux" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/native/Makefile.Linux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/quote/Makefile.Darwin" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/quote/Makefile.Darwin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/quote/Makefile.Linux" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/quote/Makefile.Linux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/capsloadLinux" beforeDir="false" afterPath="$PROJECT_DIR$/capsloadLinux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CIS3050-A2-code" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/Modules/caps/caps.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/Modules/caps/caps.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/Modules/default.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/Modules/quote.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/formatter_main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/formatter_main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/formatter_process.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/formatter_process.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/strconcat.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/strconcat.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/strsplit.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CIS3050-A2-code.dir/strsplit.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/formatter_process.c" beforeDir="false" afterPath="$PROJECT_DIR$/formatter_process.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/formatter_process.o" beforeDir="false" afterPath="$PROJECT_DIR$/formatter_process.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modFormatter" beforeDir="false" afterPath="$PROJECT_DIR$/modFormatter" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/result/test3.result" beforeDir="false" afterPath="$PROJECT_DIR$/test/result/test3.result" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/result/test4.result" beforeDir="false" afterPath="$PROJECT_DIR$/test/result/test4.result" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571155297064</updated>
-      <workItem from="1571155298531" duration="92447000" />
+      <workItem from="1571155298531" duration="95918000" />
     </task>
     <servers />
   </component>

@@ -1,11 +1,11 @@
 CFLAGS  = -g
 LDLIBS  =
-CAPSLIB     = caps.so
-DEFAULTLIB  = default.so
-QUOTELIB    = quote.so
-CRLFLIB     = crlf.so
-BARELIB     = bare.so
-NATIVELIB      = native.so
+CAPSLIB     = libCaps.so
+DEFAULTLIB  = libDefault.so
+QUOTELIB    = libQuote.so
+CRLFLIB     = libCRLF.so
+BARELIB     = libBareLF.so
+NATIVELIB      = libNative.so
 
 EXE     = loadDarwin
 OBJS = \

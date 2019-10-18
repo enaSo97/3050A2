@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  = -g -fPIC
-LIB     = caps.so
+LIB     = libCaps.so
 OBJS    = caps.o
 
 $(LIB): $(OBJS)

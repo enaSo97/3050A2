@@ -92,11 +92,11 @@ searchAndLoadModule(const char *moduleName, const char *modulePath, int verbosit
 }
 
 void searchDir(const char * moduleName, const char *modulePath, ModuleDataListNode *result){
-	char temp[1000];
+
 	DIR * d;
 	d = opendir(modulePath);
 	struct dirent * entry;
-	strcpy(temp, moduleName);
+
 	if (!d)
 	{
 		fprintf(stderr, "Cannot open directory %s: %s\n", modulePath, strerror(errno));
@@ -104,6 +104,7 @@ void searchDir(const char * moduleName, const char *modulePath, ModuleDataListNo
 	}
 	while((entry = readdir(d)) != NULL)
 	{
+		char temp[1000];
 		//printf("%s : %s\n", temp_path, entry->d_name);
 		if (entry->d_type == DT_DIR)
 		{
@@ -112,17 +113,22 @@ void searchDir(const char * moduleName, const char *modulePath, ModuleDataListNo
 				char path[1000];
 				snprintf(path, 1000, "%s/%s", modulePath, entry->d_name);
 				//printf("%s\n", path);
-				//memset(modulePath, 0, sizeof(modulePath));
+				memset(temp, 0, 1000);
 				searchDir(moduleName, path, result);
 			}
 		}else{
 			char path[1000];
 			snprintf(path, 1000, "%s/%s", modulePath, entry->d_name);
-			//printf("%s\n", path);
-			if (strstr(temp, ".so") == NULL)
+			//printf("%s\n", moduleName);
+			if (strstr(moduleName, ".so") == NULL)
 			{
-				//no .so extension found
+				//no .so extension founds
+				strcat(temp, "lib");
+				strcat(temp, moduleName);
 				strcat(temp, ".so");
+				//printf("temp %s\n", temp);
+			}else{
+				strcpy(temp, moduleName);
 			}
 			if (strcmp(temp, entry->d_name) == 0)
 			{
@@ -130,6 +136,7 @@ void searchDir(const char * moduleName, const char *modulePath, ModuleDataListNo
 				result->next = NULL;
 				printf("%s module loaded\n", temp);
 			}
+			memset(temp, 0, 1000);
 		}
 
 	}
@@ -260,7 +267,7 @@ processLineData(
 	if (dlfunction == NULL){
 		fprintf(stderr, "Cannont locate function symbol '%s' : %s\n", "defaultLinux.so", dlerror());
 	}
-	if (strcmp(moduleData->name, "default")==0)
+	if (strstr(moduleData->name, "Default") != NULL)
 	{
 		void (*fptr)(char *, int);
 		fptr = (void(*)(char*, int))dlfunction;

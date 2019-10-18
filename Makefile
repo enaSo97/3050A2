@@ -101,28 +101,28 @@ tags ctags : dummy
 # run - ctags depends on this, so therefore ctags will always be
 # executed by "make ctags" as make is fooled into thinking that it
 # has performed a dependency each time, and therefore re-does the work
-test : test1 test2 test3 test4 test5
+test : test1 test2 test3 test4
 
 test1:
 	@echo TEST 1 : loading one module [default]
-	- ./modFormatter -o test/result/test1.result -D default test/test/para1
+	- ./modFormatter -o test/result/test1.result -D libDefault.so test/test/para1
 	- diff test/expected/test1.expected test/result/test1.result
 	@echo
 
 test2:
 	@echo TEST 2 : loading one module [caps]
-	- ./modFormatter -o test/result/test2.result -D caps test/test/para1
+	- ./modFormatter -o test/result/test2.result -D Caps test/test/para1
 	- diff test/expected/test2.expected test/result/test2.result
 	@echo
 
 test3:
 	@echo TEST 3 : loading one module [CRLF]
-	- ./modFormatter -o test/result/test3.result -D crlf test/test/para1
+	- ./modFormatter -o test/result/test3.result -D CRLF test/test/para1
 	- diff test/expected/test3.expected test/result/test3.result
 	@echo
 
 test4:
-	@echo TEST 4 : loading three module quote,caps,default
+	@echo TEST 4 : loading three module Quote,Caps,Default
 	- ./modFormatter -o test/result/test4.result -D quote,caps,default test/test/para1
 	- diff test/expected/test3.expected test/result/test3.result
 	@echo
