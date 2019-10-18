@@ -1,0 +1,31 @@
+SYS_CLOC            = c:\Program Files (x86)\Windows Kits\10
+SYS_HEADER_LOC_A    = $(SYS_CLOC)\Include\10.0.17763.0\ucrt
+SYS_HEADER_LOC_B    = $(SYS_CLOC)\Include\10.0.17763.0\um
+SYS_HEADER_LOC_C    = $(SYS_CLOC)\Include\10.0.17763.0\shared
+SYS_LIB_LOC_A       = $(SYS_CLOC)\lib\10.0.17763.0\um\x64
+SYS_LIB_LOC_B       = $(SYS_CLOC)\lib\10.0.17763.0\ucrt\x64
+SYS_LIB_LOC_A       = c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\onecore\x64
+
+EXE = bare.exe
+
+OBJS = \
+		bare.obj
+
+LIB = bare.dll
+
+CC  = cl
+
+CFLAGS  = /I"$(SYS_HEADER_LOC_A)" /I"$(SYS_HEADER_LOC_B)" /I"$(SYS_HEADER_LOC_C)"
+LDFLAGS = /LIBPATH:"$(SYS_LIB_LOC_A)" /LIBPATH:"$(SYS_LIB_LOC_B)" /LIBPATH:"$(SYS_LIB_LOC_C)" /MACHINE:x64
+LDLIBS  =
+
+
+
+$(EXE) exe : $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) /link /out: $(EXE) $(LDFLAGS) $(LDLIBS)
+	icacls $(EXE) /grant Everyone:RX
+
+clean :
+	- del /f $(EXE)
+	- del /f $(OBJS)
+	- del /f *.pdb

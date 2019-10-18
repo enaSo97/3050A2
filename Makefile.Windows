@@ -48,6 +48,14 @@ $(EXE) exe : $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) /link /out:$(EXE) $(LDFLAGS) $(LDLIBS)
 	icacls $(EXE) /grant Everyone:RX
 
+libs:
+	SCRIPTDIR=`pwd`; \
+    for dir in moduleSrc* ; do \
+        if [ -d "$$dir" ] ; then \
+            ( cd "$$dir" ; $${SCRIPTDIR}/mk ) ; \
+        fi ;\
+    done
+
 ##
 ##	Cleanup Targets
 ##	---------------

@@ -5,6 +5,7 @@
 #include<ctype.h>
 #include<stdlib.h>
 #include<string.h>
+#include"../../os_defs.h"
 
 void module(char * content)
 {

@@ -173,7 +173,7 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 			}
 			else if (strcmp(moduleName, "bare") == 0)
 			{
-				printf("module name found\n");
+				//printf("module name found\n");
 				if (strcmp(entry->d_name, "bare.so") == 0)
 				{
 					result->sharedObject = dlopen(path, RTLD_NOW);
@@ -307,45 +307,7 @@ processLineData(
 	/** make sure that we actually loaded the module, or abort */
 	assert(moduleData->sharedObject != NULL);
 
-	/*if (strcmp(moduleData->name, "default")==0)
-	{
-		void * dlfunction = dlsym(moduleData->sharedObject, "default_prepend");
-		if (dlfunction == NULL){
-			fprintf(stderr, "Cannont locate function symbol '%s' : %s\n", "defaultLinux.so", dlerror());
-		}
-		void (*fptr)(char *, int);
-		fptr = (void(*)(char*, int))dlfunction;
-		(*fptr)((char *)*lineData->bufferset, lineNo);
-	}
-	else if (strcmp(moduleData->name, "caps")==0)
-	{
-		void * dlfunction = dlsym(moduleData->sharedObject, "convert_to_upper");
-		if (dlfunction == NULL){
-			fprintf(stderr, "Cannont locate function symbol '%s' : %s\n", "capsLinux.so", dlerror());
-		}
-		void (*fptr)(char *);
-		fptr = (void(*)(char*))dlfunction;
-		(*fptr)((char *) *lineData->bufferset);
-	}else if (strcmp(moduleData->name, "quote")==0)
-	{
-		void * dlfunction = dlsym(moduleData->sharedObject, "quote");
-		if (dlfunction == NULL){
-			fprintf(stderr, "Cannont locate function symbol '%s' : %s\n", "quoteLinux.so", dlerror());
-		}
-		void (*fptr)(char *);
-		fptr = (void(*)(char*))dlfunction;
-		(*fptr)((char *) *lineData->bufferset);
-	}
-	else if (strcmp(moduleData->name, "crlf")==0)
-	{
-		void * dlfunction = dlsym(moduleData->sharedObject, "function");
-		if (dlfunction == NULL){
-			fprintf(stderr, "Cannont locate function symbol '%s' : %s\n", "crlfLinux.so", dlerror());
-		}
-		void (*fptr)(char *);
-		fptr = (void(*)(char*))dlfunction;
-		(*fptr)((char *) *lineData->bufferset);
-	}*/
+
 	void * dlfunction = dlsym(moduleData->sharedObject, "module");
 	if (dlfunction == NULL){
 		fprintf(stderr, "Cannont locate function symbol '%s' : %s\n", "defaultLinux.so", dlerror());
