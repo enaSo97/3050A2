@@ -50,9 +50,9 @@ $(EXE) exe : $(OBJS) libs
 
 libs:
 	set SCRIPTDIR = `cd`; \
-    FOR %%dir in Modules/* \
+    FOR /D %%dir in Modules/* \
     DO
-        if [ -d "%%dir" ] ; then \
+        if [ /D "%%dir" ] ; then \
             ( cd "%%dir" ; %SCRIPTDIR%/mk ) ; \
         fi ;\
 
