@@ -15,7 +15,7 @@ OBJS = \
 	strsplit.o
 
 $(EXE): $(OBJS) Modules/caps/$(CAPSLIB) Modules/default/$(DEFAULTLIB) Modules/quote/$(QUOTELIB) Modules/CRLF/$(CRLFLIB) Modules/bare/$(BARELIB) Modules/native/$(NATIVELIB)
-	$(CC) $(CFLAGS) -Llib -rdynamic -o $(EXE) $(OBJS) $(LDLIBS)
+	$(CC) $(CFLAGS) -rdynamic -o $(EXE) $(OBJS) $(LDLIBS)
 
 Modules/caps/$(CAPSLIB):
 	cd Modules/caps ; make -f Makefile.Darwin $(CAPSLIB)
