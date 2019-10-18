@@ -87,7 +87,7 @@ searchAndLoadModule(const char *moduleName, const char *modulePath, int verbosit
 		//printf("working: %s\n", temp_path);
 	}
 	searchDir(moduleName, temp_path, result);
-
+	free(temp_path);
 
 	return result;
 }
@@ -199,7 +199,7 @@ unloadModule(ModuleDataListNode *data)
 	assert(data->sharedObject != NULL);
 
 	/** do work to take care of the library cleanup here */
-
+	dlclose(data->sharedObject);
 	free(data);
 }
 
@@ -347,7 +347,7 @@ processLineWithModuleList(
 		int verbosity
 	)
 {
-	int count = 0, status;
+	int count = 0, status = 0;
 
 	/** chase though the linked list, processing the line with all modules */
 	for ( ; listp != NULL && data->nBuffers < maxBuffers; listp = listp->next) {

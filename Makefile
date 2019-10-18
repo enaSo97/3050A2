@@ -101,6 +101,9 @@ tags ctags : dummy
 # run - ctags depends on this, so therefore ctags will always be
 # executed by "make ctags" as make is fooled into thinking that it
 # has performed a dependency each time, and therefore re-does the work
-dummy :
+test : test1
+
+test1:
+	echo TEST 1 : Testing for
 
 

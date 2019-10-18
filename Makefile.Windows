@@ -49,7 +49,7 @@ $(EXE) exe : $(OBJS) Modules/bare/bare.dll
 	icacls $(EXE) /grant Everyone:RX
 
 Modules/bare/bare.dll:
-	cd Modules\bare ; 
+	cd Modules\bare\ ; mk --f Makefile.Windows bare.dll
 
 ##
 ##	Cleanup Targets
