@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  = -g -fPIC
-LIB     = quoteLinux.so
+LIB     = quote.so
 OBJS    = quote.o
 
 $(LIB): $(OBJS)

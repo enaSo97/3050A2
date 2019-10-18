@@ -123,7 +123,7 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 			//printf("%s\n", path);
 			if (strcmp(moduleName, "default") == 0)
 			{
-				if (strcmp(entry->d_name, "defaultLinux.so") == 0)
+				if (strcmp(entry->d_name, "default.so") == 0)
 				{
 					result->sharedObject = dlopen(path, RTLD_NOW);
 					result->next = NULL;
@@ -133,7 +133,7 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 			}
 			else if (strcmp(moduleName, "caps") == 0)
 			{
-				if (strcmp(entry->d_name, "capsLinux.so") == 0)
+				if (strcmp(entry->d_name, "caps.so") == 0)
 				{
 					result->sharedObject = dlopen(path, RTLD_NOW);
 					result->next = NULL;
@@ -143,7 +143,7 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 			}
 			else if (strcmp(moduleName, "quote") == 0)
 			{
-				if (strcmp(entry->d_name, "quoteLinux.so") == 0)
+				if (strcmp(entry->d_name, "quote.so") == 0)
 				{
 					result->sharedObject = dlopen(path, RTLD_NOW);
 					result->next = NULL;
@@ -153,7 +153,7 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 			}
 			else if (strcmp(moduleName, "crlf") == 0)
 			{
-				if (strcmp(entry->d_name, "crlfLinux.so") == 0)
+				if (strcmp(entry->d_name, "crlf.so") == 0)
 				{
 					result->sharedObject = dlopen(path, RTLD_NOW);
 					result->next = NULL;
@@ -163,7 +163,7 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 			}
 			else if (strcmp(moduleName, "native") == 0)
 			{
-				if (strcmp(entry->d_name, "nativeLinux.so") == 0)
+				if (strcmp(entry->d_name, "native.so") == 0)
 				{
 					result->sharedObject = dlopen(path, RTLD_NOW);
 					result->next = NULL;

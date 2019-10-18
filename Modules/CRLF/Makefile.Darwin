@@ -1,6 +1,6 @@
 #CC      = gcc
 CFLAGS  = -g -fPIC
-LIB     = crlfDarwin.so
+LIB     = crlf.so
 OBJS    = crlf.o
 
 $(LIB): $(OBJS)

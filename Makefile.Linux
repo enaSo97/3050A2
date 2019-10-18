@@ -1,11 +1,11 @@
 CFLAGS  = -g
 LDLIBS  = -ldl
-CAPSLIB     = capsLinux.so
-DEFAULTLIB  = defaultLinux.so
-QUOTELIB    = quoteLinux.so
-CRLFLIB     = crlfLinux.so
-BARELIB     = bareLinux.so
-NATIVELIB      = nativeLinux.so
+CAPSLIB     = caps.so
+DEFAULTLIB  = default.so
+QUOTELIB    = quote.so
+CRLFLIB     = crlf.so
+BARELIB     = bare.so
+NATIVELIB      = native.so
 
 EXE     = capsloadLinux
 OBJS = \

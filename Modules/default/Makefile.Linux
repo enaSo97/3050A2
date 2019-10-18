@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  = -g -fPIC
-LIB     = defaultLinux.so
+LIB     = default.so
 OBJS    = default.o
 
 $(LIB): $(OBJS)

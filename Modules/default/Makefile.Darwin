@@ -1,6 +1,6 @@
 #CC      = gcc
 CFLAGS  = -g -fPIC
-LIB     = defaultDarwin.so
+LIB     = default.so
 OBJS    = default.o
 
 $(LIB): $(OBJS)
