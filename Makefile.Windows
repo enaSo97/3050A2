@@ -49,7 +49,7 @@ $(EXE) exe : $(OBJS) libs
 	icacls $(EXE) /grant Everyone:RX
 
 libs:
-	SCRIPTDIR=`pwd`; \
+	SCRIPTDIR=`_getcwd`; \
     for dir in Modules/* ; do \
         if [ -d "$$dir" ] ; then \
             ( cd "$$dir" ; $${SCRIPTDIR}/mk ) ; \
