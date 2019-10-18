@@ -49,9 +49,9 @@ $(EXE) exe : $(OBJS) libs
 	icacls $(EXE) /grant Everyone:RX
 
 libs:
-    for dir in Modules/* ; do \
-        if [ -d "$$dir" ] ; then \
-            ( cd "$$dir" ; `cd`/mk ) ; \
+    for file in Modules/* ; do \
+        if [ -d "$$file" ] ; then \
+            ( cd "$$file" ; `cd`/mk ) ; \
         fi ;\
     done
 
