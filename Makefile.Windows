@@ -44,13 +44,13 @@ LDLIBS =
 ##
 
 # Default target - build the program
-$(EXE) exe : $(OBJS)
+$(EXE) exe : $(OBJS) libs
 	$(CC) $(CFLAGS) $(OBJS) /link /out:$(EXE) $(LDFLAGS) $(LDLIBS)
 	icacls $(EXE) /grant Everyone:RX
 
 libs:
 	SCRIPTDIR=`pwd`; \
-    for dir in moduleSrc* ; do \
+    for dir in Modules/* ; do \
         if [ -d "$$dir" ] ; then \
             ( cd "$$dir" ; $${SCRIPTDIR}/mk ) ; \
         fi ;\
