@@ -49,8 +49,8 @@ $(EXE) exe : $(OBJS) libs
 	icacls $(EXE) /grant Everyone:RX
 
 libs:
-	set SCRIPTDIR = `cd`; \
-    FOR /D %dir in Modules/* \
+	set SCRIPTDIR = `cd`
+    FOR /D %dir in Modules/
     DO
             echo %dir
             cd %dir ; %SCRIPTDIR%/mk
