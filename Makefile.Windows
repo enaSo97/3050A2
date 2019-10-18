@@ -52,7 +52,7 @@ libs:
 	set SCRIPTDIR = `cd`; \
     FOR /D %%dir in Modules/* \
     DO
-            echo %dir%
+            echo %%dir
             cd %dir% ; %SCRIPTDIR%/mk
 
 ##
