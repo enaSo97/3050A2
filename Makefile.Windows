@@ -44,7 +44,7 @@ LDLIBS =
 ##
 
 # Default target - build the programexe
-$(EXE) exe : $(OBJS) Modules/bare/bare.dll
+$(EXE) exe : $(OBJS)
 	cd Modules\bare\ ; mk --f Makefile.Windows bare.dll
 	$(CC) $(CFLAGS) $(OBJS) /link /out:$(EXE) $(LDFLAGS) $(LDLIBS)
 	icacls $(EXE) /grant Everyone:RX
