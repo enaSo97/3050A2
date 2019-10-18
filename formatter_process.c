@@ -112,14 +112,14 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 			if (strcmp(entry->d_name, ".")!=0 && strcmp(entry->d_name, "..") != 0)
 			{
 				char path[1000];
-				snprintf(path, PATH_MAX, "%s/%s", modulePath, entry->d_name);
+				snprintf(path, 1000, "%s/%s", modulePath, entry->d_name);
 				//printf("%s\n", path);
 				//memset(modulePath, 0, sizeof(modulePath));
 				searchDir(moduleName, path, result);
 			}
 		}else{
 			char path[1000];
-			snprintf(path, PATH_MAX, "%s/%s", modulePath, entry->d_name);
+			snprintf(path, 1000, "%s/%s", modulePath, entry->d_name);
 			//printf("%s\n", path);
 			if (strcmp(moduleName, "default") == 0)
 			{
