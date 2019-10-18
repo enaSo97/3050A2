@@ -52,7 +52,7 @@ libs:
 	set SCRIPTDIR = `cd`; \
     FOR /D %%dir in Modules/* \
     DO
-            cd "%%dir" ; %SCRIPTDIR%/mk
+            cd %dir% ; %SCRIPTDIR%/mk
 
 ##
 ##	Cleanup Targets
