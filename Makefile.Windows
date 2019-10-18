@@ -52,9 +52,8 @@ libs:
 	set SCRIPTDIR = `cd`; \
     FOR /D %%dir in Modules/* \
     DO
-        if %%dir ; then \
-            ( cd "%%dir" ; %SCRIPTDIR%/mk ) ; \
-        fi ;\
+        if %%dir
+            cd "%%dir" ; %SCRIPTDIR%/mk
 
 ##
 ##	Cleanup Targets
