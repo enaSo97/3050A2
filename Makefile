@@ -44,7 +44,7 @@ $(EXE) : $(OBJS)
 # Done by looping over all of the source directories that we see,
 # using a variable that can be repopulated if we are inheriting
 # this makefile build context in a uname defined makefile.
-#
+#t
 # Note that this is all on one line as each line from a makefile
 # is run separately in a subshell - if we want to span lines,
 # we would need to have line continue characters at the end of
@@ -101,7 +101,7 @@ tags ctags : dummy
 # run - ctags depends on this, so therefore ctags will always be
 # executed by "make ctags" as make is fooled into thinking that it
 # has performed a dependency each time, and therefore re-does the work
-test : test1 test2 test3
+test : test1 test2 test3 test4 test5
 
 test1:
 	@echo TEST 1 : loading one module [default]
@@ -118,6 +118,11 @@ test2:
 test3:
 	@echo TEST 3 : loading one module [CRLF]
 	- ./modFormatter -o test/result/test3.result -D crlf test/test/para1
+	- diff test/expected/test3.expected test/result/test3.result
+	@echo
 
-
-
+test4:
+	@echo TEST 4 : loading three module quote,caps,default
+	- ./modFormatter -o test/result/test4.result -D quote,caps,default test/test/para1
+	- diff test/expected/test3.expected test/result/test3.result
+	@echo

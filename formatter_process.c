@@ -91,13 +91,12 @@ searchAndLoadModule(const char *moduleName, const char *modulePath, int verbosit
 	return result;
 }
 
-void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNode *result){
-	void * dlib;
-	void * dlfunction;
-	//printf("dir: %s\n", modulePath);
+void searchDir(const char * moduleName, const char *modulePath, ModuleDataListNode *result){
+	char temp[1000];
 	DIR * d;
 	d = opendir(modulePath);
 	struct dirent * entry;
+	strcpy(temp, moduleName);
 	if (!d)
 	{
 		fprintf(stderr, "Cannot open directory %s: %s\n", modulePath, strerror(errno));
@@ -120,66 +119,16 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 			char path[1000];
 			snprintf(path, 1000, "%s/%s", modulePath, entry->d_name);
 			//printf("%s\n", path);
-			if (strcmp(moduleName, "default") == 0)
+			if (strstr(temp, ".so") == NULL)
 			{
-				if (strcmp(entry->d_name, "default.so") == 0)
-				{
-					result->sharedObject = dlopen(path, RTLD_NOW);
-					result->next = NULL;
-					printf("Default module loaded\n");
-					//dlfunction = dlsym(dlib, "default_prepend");
-				}
+				//no .so extension found
+				strcat(temp, ".so");
 			}
-			else if (strcmp(moduleName, "caps") == 0)
+			if (strcmp(temp, entry->d_name) == 0)
 			{
-				if (strcmp(entry->d_name, "caps.so") == 0)
-				{
-					result->sharedObject = dlopen(path, RTLD_NOW);
-					result->next = NULL;
-					printf("DEBUG: caps module loaded\n");
-					//dlfunction = dlsym(dlib, "default_prepend");
-				}
-			}
-			else if (strcmp(moduleName, "quote") == 0)
-			{
-				if (strcmp(entry->d_name, "quote.so") == 0)
-				{
-					result->sharedObject = dlopen(path, RTLD_NOW);
-					result->next = NULL;
-					printf("DEBUG: quote module loaded\n");
-					//dlfunction = dlsym(dlib, "default_prepend");
-				}
-			}
-			else if (strcmp(moduleName, "crlf") == 0)
-			{
-				if (strcmp(entry->d_name, "crlf.so") == 0)
-				{
-					result->sharedObject = dlopen(path, RTLD_NOW);
-					result->next = NULL;
-					printf("DEBUG: crlf module loaded\n");
-					//dlfunction = dlsym(dlib, "default_prepend");
-				}
-			}
-			else if (strcmp(moduleName, "native") == 0)
-			{
-				if (strcmp(entry->d_name, "native.so") == 0)
-				{
-					result->sharedObject = dlopen(path, RTLD_NOW);
-					result->next = NULL;
-					printf("DEBUG: native module loaded\n");
-					//dlfunction = dlsym(dlib, "default_prepend");
-				}
-			}
-			else if (strcmp(moduleName, "bare") == 0)
-			{
-				//printf("module name found\n");
-				if (strcmp(entry->d_name, "bare.so") == 0)
-				{
-					result->sharedObject = dlopen(path, RTLD_NOW);
-					result->next = NULL;
-					printf("DEBUG: bare module loaded\n");
-					//dlfunction = dlsym(dlib, "default_prepend");
-				}
+				result->sharedObject = dlopen(path, RTLD_NOW);
+				result->next = NULL;
+				printf("%s module loaded\n", temp);
 			}
 		}
 
