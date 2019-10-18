@@ -48,10 +48,10 @@ $(EXE) exe : $(OBJS) libs
 	$(CC) $(CFLAGS) $(OBJS) /link /out:$(EXE) $(LDFLAGS) $(LDLIBS)
 	icacls $(EXE) /grant Everyone:RX
 
+DIR = Modules
 libs:
-	set SCRIPTDIR = `cd`
-    FOR /D %%dir in Modules/
-    DO
+	$(MYDIR)/*
+    for /D file in $^; do \
             echo %%dir
             cd %%dir ; %SCRIPTDIR%/mk
 
