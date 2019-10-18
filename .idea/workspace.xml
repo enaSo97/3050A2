@@ -11,7 +11,25 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b8e43e1-9ef8-402d-810a-d65608f7ec7f" name="Default Changelist" comment="" />
+    <list default="true" id="4b8e43e1-9ef8-402d-810a-d65608f7ec7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/expected/test1.expected" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/expected/test2.expected" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile.Windows" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile.Windows" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/caps/caps.c" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/caps/caps.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/caps/caps.o" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/caps/caps.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/caps/caps.so" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/caps/caps.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capsloadLinux" beforeDir="false" afterPath="$PROJECT_DIR$/capsloadLinux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formatter_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/formatter_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formatter_main.o" beforeDir="false" afterPath="$PROJECT_DIR$/formatter_main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formatter_process.c" beforeDir="false" afterPath="$PROJECT_DIR$/formatter_process.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formatter_process.o" beforeDir="false" afterPath="$PROJECT_DIR$/formatter_process.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modFormatter" beforeDir="false" afterPath="$PROJECT_DIR$/modFormatter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_file/para1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_file/tesing.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/tesing.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_file/test_resutl.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_resutl.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/bare" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/expected" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,11 +69,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/expected" />
+      <recent name="$PROJECT_DIR$/test_file/expected" />
       <recent name="$PROJECT_DIR$/Modules/bare" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Modules" />
-      <recent name="$PROJECT_DIR$/Modules/quote" />
-      <recent name="$PROJECT_DIR$/Modules/native" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Modules/caps" />
@@ -90,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571155297064</updated>
-      <workItem from="1571155298531" duration="85427000" />
+      <workItem from="1571155298531" duration="88448000" />
     </task>
     <servers />
   </component>

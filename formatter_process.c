@@ -63,7 +63,6 @@ searchAndLoadModule(const char *moduleName, const char *modulePath, int verbosit
 {
 	ModuleDataListNode *result;
 	void *symbol;
-	printf("DEBUG: searching module function\n\n");
 	/** allocate the node and ensure that it is painted with zeros */
 	result = (ModuleDataListNode *) malloc(sizeof(ModuleDataListNode));
 	memset(result, 0, sizeof(ModuleDataListNode));
@@ -127,7 +126,7 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 				{
 					result->sharedObject = dlopen(path, RTLD_NOW);
 					result->next = NULL;
-					printf("DEBUG: default module loaded\n");
+					printf("Default module loaded\n");
 					//dlfunction = dlsym(dlib, "default_prepend");
 				}
 			}

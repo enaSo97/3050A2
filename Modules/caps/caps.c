@@ -9,7 +9,6 @@
 
 void module(char * content)
 {
-	printf("\nmodule convert to upper\n");
 	for (int i = 0; i < strlen(content); i++)
 	{
 		content[i] = toupper(content[i]);

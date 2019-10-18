@@ -71,10 +71,6 @@ main(int argc, char ** argv)
 	int exitStatus = (-1);
 	int i, ch;
 
-	#ifdef OS_LINUX
-		printf("this is linux\n");
-	#endif
-
 	/** get the environment variable whose name is stored in VAR_MODPATH */
 	/** ... add code here ... */
 	setenv(VAR_MODPATH, "./", 1);
