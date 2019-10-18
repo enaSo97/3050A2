@@ -173,6 +173,7 @@ void searchDir(const char *moduleName, const char *modulePath, ModuleDataListNod
 			}
 			else if (strcmp(moduleName, "bare") == 0)
 			{
+				printf("module name found\n");
 				if (strcmp(entry->d_name, "bare.so") == 0)
 				{
 					result->sharedObject = dlopen(path, RTLD_NOW);
