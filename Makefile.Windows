@@ -49,7 +49,6 @@ $(EXE) exe : $(OBJS) libs
 	icacls $(EXE) /grant Everyone:RX
 
 libs:
-	##SCRIPTDIR=`cd`; \
     for dir in Modules/* ; do \
         if [ -d "$$dir" ] ; then \
             ( cd "$$dir" ; `cd`/mk ) ; \
