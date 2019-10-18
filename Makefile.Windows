@@ -49,10 +49,10 @@ $(EXE) exe : $(OBJS) libs
 	icacls $(EXE) /grant Everyone:RX
 
 libs:
-	SCRIPTDIR=`cd`; \
+	##SCRIPTDIR=`cd`; \
     for dir in Modules/* ; do \
         if [ -d "$$dir" ] ; then \
-            ( cd "$$dir" ; $${SCRIPTDIR}/mk ) ; \
+            ( cd "$$dir" ; `cd`/mk ) ; \
         fi ;\
     done
 
